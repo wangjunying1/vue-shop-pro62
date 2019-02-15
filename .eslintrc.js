@@ -21,6 +21,17 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    // 数组，对象多个成员结尾都好是否设置不影响
+    'comma-dangle':[
+      'error',{
+        arrays:'ignore',
+        objects:'ignore',
+        imports:'ignore',
+        exports:'ignore',
+        functions:'ignore'
+      }
+    ],
+    "space-before-function-paren":["error","never"],
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development
