@@ -6,3 +6,11 @@ body,
   margin: 0;
   padding: 0;
 }
+/* 左侧样式 */
+.el-submenu_title,
+.el-menu-item {
+  font-size: 13px;
+}
+i.iconfont {
+  margin-right: 10px;
+}

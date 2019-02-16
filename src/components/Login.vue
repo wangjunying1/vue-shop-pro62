@@ -29,8 +29,8 @@ export default {
   data() {
     return {
       loginForms: {
-        username: '',
-        password: ''
+        username: 'admin',
+        password: '123456'
       },
       // 给哥哥表单域定义校验规则
       loginFormRules: {
@@ -49,7 +49,7 @@ export default {
           // 用户真实性验证
           // axios带着数据到后端数据库验证
           const { data: res } = await this.$http.post('/login', this.loginForms)
-          console.log(res)
+          // console.log(res)
           // console.log(this.loginForms)
           // 判断用户名或者密码真实性校验失败
           if (res.meta.status !== 200) {
